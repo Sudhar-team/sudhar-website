@@ -1,0 +1,88 @@
+/* APPEARANCE STYLES*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+body 
+{ 
+  margin:0px;
+  overflow-x:hidden; 
+  overflow-y:unset ;
+}
+
+iframe
+{
+  border: none;
+}
+
+.box {
+  font-size: 50px;
+  color: white;
+  font-family: lato;
+  font-weight: 300;
+  width:20%;
+  text-align: center;
+}
+
+.box-1 {background: #f51435;}
+.box-2 {background: #fa6800;}
+.box-3 {background: #f0a30a;}
+.box-4 {background: #e3c800;}
+.box-5 {background: #a4c400;}
+
+.box-1:hover,.box-2:hover,.box-3:hover,.box-4:hover,.box-5:hover
+{  
+  transform: scaleX(1.009);
+  box-shadow: 0 0 10px #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  -moz-box-shadow: 0 0 10px #333; 
+  -o-box-shadow: 0 0 10px #333;
+  -ms-box-shadow: 0 0 10px #333;
+}
+
+/*  LAYOUT STYLES */
+
+.container {
+  display: flex;
+  height: 100vh;
+
+}
+/* BUTTON STYLES */
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
